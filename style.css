@@ -1,0 +1,57 @@
+```css
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('technology-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+header{
+    background:rgba(0,119,204,.8);
+    text-align:center;
+    padding:25px;
+}
+
+section{
+    background:rgba(255,255,255,.95);
+    color:black;
+    margin:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    box-sizing:border-box;
+}
+
+#output{
+    color:green;
+    font-weight:bold;
+}
+```
