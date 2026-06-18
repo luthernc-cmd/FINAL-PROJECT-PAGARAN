@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        #output {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Portfolio Website</h1>
+        <p>Created by Luther Pagaran</p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+
+        <p>
+            Hello everyone! My name is <b>Luther Constantine S. Pagaran</b>.
+            This is my Apps Portfolio Website created using HTML, CSS, and JavaScript.
+            The purpose of this website is to showcase my personal information,
+            projects, skills, and provide a contact form where visitors can send me a message.
+        </p>
+    </section>
+
+    <section>
+        <h2>Live Demo</h2>
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="demo"></p>
+
+        <h3>Contact Form</h3>
+
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <textarea id="message" placeholder="Write your message"></textarea>
+
+        <button onclick="submitForm()">Submit</button>
+
+        <p id="output"></p>
+    </section>
+
+    <section>
+        <h2>Code Explanation</h2>
+
+        <p>
+            The website is built using three technologies:
+        </p>
+
+        <ul>
+            <li><b>HTML</b> creates the structure of the webpage.</li>
+            <li><b>CSS</b> styles the page with colors, spacing, and layout.</li>
+            <li><b>JavaScript</b> adds interactivity like button clicks and form validation.</li>
+        </ul>
+
+        <p>
+            The <b>showMessage()</b> function displays a welcome message when the button is clicked.
+            The <b>submitForm()</b> function checks if the user entered their name and message.
+            If both fields are filled, it displays a success message.
+        </p>
+    </section>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML =
+                "Welcome to my Portfolio Website!";
+        }
+
+        function submitForm() {
+            let name = document.getElementById("name").value;
+            let message = document.getElementById("message").value;
+
+            if (name === "" || message === "") {
+                document.getElementById("output").innerHTML =
+                    "Please complete the form.";
+            } else {
+                document.getElementById("output").innerHTML =
+                    "Thank you, " + name +
+                    "! Your message has been submitted successfully.";
+            }
+        }
+    </script>
+
+</body>
+</html>
