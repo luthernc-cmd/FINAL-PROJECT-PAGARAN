@@ -1,4 +1,3 @@
-```javascript
 function showMessage() {
     document.getElementById("demo").innerHTML =
     "Welcome to my Portfolio Website!";
